@@ -15,8 +15,15 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       title: Text(title),
       centerTitle: true,
-      backgroundColor: Colors.teal,
+      foregroundColor: Color.fromRGBO(0xF5, 0xF5, 0xF5, 1.0),
+      backgroundColor: Color.fromRGBO(0x47, 0x9A, 0x36, 1.0),
       actions: actions,
+      titleTextStyle: const TextStyle(
+        fontFamily: 'Roboto',
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        color: Colors.white,
+      ),
     );
   }
 
